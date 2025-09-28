@@ -1,4 +1,3 @@
-// src/components/ui/UserTable.jsx
 import React from 'react';
 import { Facebook, Twitter, Instagram, Globe, CheckCircle, XCircle, Edit, Trash2 } from 'lucide-react';
 

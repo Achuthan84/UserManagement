@@ -1,4 +1,3 @@
-// src/pages/UserManagementPage.jsx
 import React, { useState } from 'react';
 import { Plus } from 'lucide-react';
 import { useUsers } from '../hooks/useUsers';
@@ -133,7 +132,6 @@ const UserManagementPage = () => {
             onSelectUser={toggleUserSelection}
             onSelectAll={toggleAllSelection}
             onEdit={(user) => {
-              // ✅ FIX: Get latest user from state
               const latestUser = users.find(u => u.id === user.id);
               setEditingUser(latestUser);
               setShowAddModal(true);

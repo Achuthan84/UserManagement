@@ -1,4 +1,3 @@
-// src/components/ui/BulkActions.jsx
 import React from 'react';
 
 const BulkActions = ({ onSuspend, onArchive, onDelete, selectedCount, isProcessing }) => {

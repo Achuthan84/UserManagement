@@ -1,4 +1,3 @@
-// src/Modals/UserAddModal.jsx
 import React, { useState } from 'react';
 import { Facebook, Twitter, Instagram, Globe, Upload, X } from 'lucide-react';
 
@@ -62,7 +61,6 @@ const UserAddModal = ({ onAddUser, onCancel, initialData = null }) => {
           </h2>
 
           <form onSubmit={handleSubmit}>
-            {/* Image Upload */}
             <div className="mb-4">
               <label className="block text-sm font-medium text-gray-700 mb-2">Profile Image</label>
               <div className="flex items-center space-x-4">

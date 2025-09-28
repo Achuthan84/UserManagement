@@ -1,4 +1,3 @@
-// src/hooks/useUsers.js
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -9,10 +8,7 @@ export const useUsers = () => {
     const fetchUsers = async () => {
         try {
             setLoading(true);
-            // ✅ Fetch real users from JSONPlaceholder
             const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-
-            // Transform to match your UI structure
             const transformed = response.data.map((user, index) => ({
                 id: user.id,
                 name: user.name,
@@ -28,7 +24,6 @@ export const useUsers = () => {
             setUsers(transformed);
         } catch (err) {
             console.error('Failed to fetch users:', err);
-            // Fallback to empty array
             setUsers([]);
         } finally {
             setLoading(false);
